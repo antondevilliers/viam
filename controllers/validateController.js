@@ -1,12 +1,17 @@
+/**
+ *  Validation Controller
+ *  This middleware controller performs valdiation and adjustments.
+ *  @version 1.0.0
+ *
+ */
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/AppError");
 
 /**
+ * msisdn field validation
  * Middleware function.
  * To validate the msisdn field and perform conversion if requried.
  * 
- * Route: api/v1/balance/msisdn/:msisdn
- * Method: Get
  * @version 1.0.0
  * 
  */
@@ -48,8 +53,8 @@ const AppError = require("../utils/AppError");
 
 
 /**
- * Route: api/v1/balance
- * Method: Get
+ * Reponse for empty field.
+ * Middleware function.
  * @version 1.0.0
  * Description: Response on empty field.
  */

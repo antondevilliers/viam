@@ -10,7 +10,7 @@ const { createXMLWallet } = require("./xmlFactory");
 const { fetchXMLData } = require("../controllers/apiFactory");
 
 /**
- * Route: api/v1/profiles/wallet/msisdn//:msisdn
+ * Route: api/v1/profiles/wallet/msisdn/:msisdn
  * Method: Get
  * @version 1.0.0
  */
@@ -67,7 +67,7 @@ exports.getWallets = catchAsync(async (req, res, next) => {
 
 
 /**
- * Route: api/v1/profiles/walletref/msisdn//:msisdn
+ * Route: api/v1/profiles/walletref/msisdn/:msisdn
  * Method: Get
  * @version 1.0.0
  */

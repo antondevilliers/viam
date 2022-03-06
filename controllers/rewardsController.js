@@ -1,6 +1,6 @@
 /**
- *  Profile Controller
- *  This controller interact with the customer profile.
+ *  Rewards Controller
+ *  This controller interact with the customer rewards.
  *  @version 1.0.0
  *
  */

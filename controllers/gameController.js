@@ -1,6 +1,6 @@
 /**
- *  Balance Controller
- *  This controller interact with the customer balances.
+ *  Game Controller
+ *  This controller interact with the games.
  *  @version 1.0.0
  *
  */
@@ -10,7 +10,7 @@ const { createXMLGame } = require("./xmlFactory");
 const { fetchXMLData } = require("../controllers/apiFactory");
 
 /**
- * Route: api/v1/balance/msisdn/:msisdn
+ * Route: api/v1/games/msisdn/:msisdn
  * Method: Get
  * @version 1.0.0
  */
