@@ -30,7 +30,7 @@ Projects Include:
 - Push Notifications Micro Server (NodeJS + Express + MongoDB). - *(100,000 - 1000,000 users)*
 
 
-For some reason I am unable to export the Postmat captured responses, but have attached it below.
+For some reason I am unable to export the Postman captured responses, but have attached it below.
 
 For this problematic API, all server errors coming from the ACME API is placed into a continues loop until a valid response is supplied. It will only return a error from the ACME API if the "msisdn" parameter is not in the correct format.
 
@@ -66,7 +66,6 @@ GET: api/v1/balances/msisdn/27829991234/apierror/true
       game.log
       rewards.log
 ```
-
 **Please note, there is still some active console.log()'s to print errors.** This will still be captured via logging services like PM2.
 
 ---
