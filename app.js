@@ -33,9 +33,8 @@ app.all('/', function (req, res, next) {
 /*
  * Set security HTTP headers
  **/
-//if (process.env.HOSTING_ENV === 'local') {
-      app.use(helmet());
-//}
+
+  app.use(helmet());
 
 /**
  * Development Logging - server console

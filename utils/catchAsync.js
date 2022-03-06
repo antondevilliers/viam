@@ -1,5 +1,5 @@
 /**
- * Returns the async function as promise to attatch next and catch errors.
+ * Returns the async function as promise to attach next and catch errors.
  * @param {function} fn - function passed.
  * @return - async function
  */

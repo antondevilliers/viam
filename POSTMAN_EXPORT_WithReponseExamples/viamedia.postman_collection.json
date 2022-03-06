@@ -1,0 +1,1389 @@
+{
+	"info": {
+		"_postman_id": "496cac86-17b7-445c-9fb6-8fea25d87585",
+		"name": "viamedia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ACME XML API",
+			"item": [
+				{
+					"name": "REQUEST FOR BALANCE CHECK",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "QYnVLMxy.thx4YFezR9rbPxc",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "demo-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<BalanceRequest>\n <Balance>\n   <LineItems>\n     <LineItem>\n       <BalanceElement>\n         <CustomerProduct actionCode=\"BALANCE\">\n           <Ids>\n             <accountId schemeAgencyName=\"ACME\">R</accountId>\n           </Ids>\n           <cmn:Name>AN</cmn:Name>\n         </CustomerProduct>\n         <Specifications>\n           <Specification>\n             <msisdn>8263055500</msisdn>\n           </Specification>\n         </Specifications>\n       </BalanceElement>\n     </LineItem>\n   </LineItems>\n </Balance>\n</BalanceRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.79.78.245:30501/v1/balance",
+							"protocol": "http",
+							"host": [
+								"41",
+								"79",
+								"78",
+								"245"
+							],
+							"port": "30501",
+							"path": [
+								"v1",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REQUEST WALLET",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "QYnVLMxy.thx4YFezR9rbPxc",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "demo-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<WalletRequest>\n    <Wallet>\n        <LineItems>\n            <LineItem>\n                <WalletElement>\n                    <CustomerProduct actionCode=\"Wallet\">\n                        <Ids>\n                            <accountId schemeAgencyName=\"ACME\">R</accountId>\n                        </Ids>\n                        <cmn:Name>AN</cmn:Name>\n                    </CustomerProduct>\n                    <Specifications>\n                        <Specification>\n                            <msisdn>0829991234</msisdn>\n                        </Specification>\n                    </Specifications>\n                </WalletElement>\n            </LineItem>\n        </LineItems>\n    </Wallet>\n</WalletRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.79.78.245:30501/v1/wallet",
+							"protocol": "http",
+							"host": [
+								"41",
+								"79",
+								"78",
+								"245"
+							],
+							"port": "30501",
+							"path": [
+								"v1",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REQUEST  REWARDS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "QYnVLMxy.thx4YFezR9rbPxc",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "demo-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<RewardsRequest>\n <Rewards>\n   <LineItems>\n     <LineItem>\n       <RewardsElement>\n         <CustomerProduct actionCode=\"Rewards\">\n           <Ids>\n             <accountId schemeAgencyName=\"ACME\">R</accountId>\n           </Ids>\n           <cmn:Name>AN</cmn:Name>\n         </CustomerProduct>\n         <Specifications>\n           <Specification>\n             <msisdn>0829991234</msisdn>\n           </Specification>\n         </Specifications>\n       </RewardsElement>\n     </LineItem>\n   </LineItems>\n </Rewards>\n</RewardsRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.79.78.245:30501/v1/rewards",
+							"protocol": "http",
+							"host": [
+								"41",
+								"79",
+								"78",
+								"245"
+							],
+							"port": "30501",
+							"path": [
+								"v1",
+								"rewards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "REQUEST  REWARDS EXAMPLE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<RewardsRequest>\n <Rewards>\n   <LineItems>\n     <LineItem>\n       <RewardsElement>\n         <CustomerProduct actionCode=\"Rewards\">\n           <Ids>\n             <accountId schemeAgencyName=\"ACME\">R</accountId>\n           </Ids>\n           <cmn:Name>AN</cmn:Name>\n         </CustomerProduct>\n         <Specifications>\n           <Specification>\n             <msisdn>0829991234</msisdn>\n           </Specification>\n         </Specifications>\n       </RewardsElement>\n     </LineItem>\n   </LineItems>\n </Rewards>\n</RewardsRequest>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.79.78.245:30501/v1/rewards",
+									"protocol": "http",
+									"host": [
+										"41",
+										"79",
+										"78",
+										"245"
+									],
+									"port": "30501",
+									"path": [
+										"v1",
+										"rewards"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2069"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"815-d4Q3SsBa0Prtut2PWFEfh0M2TbY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Mar 2022 12:46:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<RewardRespone>\n    <Reward>\n        <LineItems>\n            <LineItem>\n                <RewardElement>\n                    <CustomerProduct actionCode=\"Reward\">\n                        <Ids>\n                            <accountId schemeAgencyName=\"ACME\">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>\n                        </Ids>\n                        <name>Demo Account</name>\n                    </CustomerProduct>\n                    <RewardSpecifications>\n                        <Items>\n                            <result>0</result>\n                            <reward category=\"discountBundles\" subCategory=\"dataDiscount\">\n                                <reference>1gb-data-bundle-discount</reference>\n                                <description>You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00</description>\n                            </reward>\n                            <reward category=\"discountBundles\" subCategory=\"dataDiscount\">\n                                <reference>50mg-data-bundle-discount</reference>\n                                <description>You've won 20% off a 50MB Data bundle. Was R8.00 now only R6.40</description>\n                            </reward>\n                            <reward category=\"discountBundles\" subCategory=\"data\">\n                                <reference>50mg-data-bundle-discount</reference>\n                                <description>You've won a 50MB Data bundle.</description>\n                            </reward>\n                            <reward category=\"discountBundles\" subCategory=\"allInOneDiscount\">\n                                <reference>30mg-data-bundle-discount</reference>\n                                <description>You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50</description>\n                            </reward>\n                            <reward category=\"lifestyle\" subCategory=\"lifestyleSalon\">\n                                <reference>500-salon-voucher</reference>\n                                <description>You've won a R500 Salon Voucher</description>\n                            </reward>\n                            <reward category=\"digitalServices\" subCategory=\"digitalFreeTrail\">\n                                <reference>gamesforce-voucher</reference>\n                                <description>You've won 7 Days free access to GamesForce Premium</description>\n                            </reward>\n                            <reward category=\"digitalServices\" subCategory=\"digitalVoucher\">\n                                <reference>gamesforce-voucher</reference>\n                                <description>You've won a subscription to GamesForce Premium</description>\n                            </reward>\n                        </Items>\n                    </RewardSpecifications>\n                </RewardElement>\n            </LineItem>\n        </LineItems>\n    </Reward>\n</RewardRespone>"
+						}
+					]
+				},
+				{
+					"name": "REQUEST TO PLAY THE GAME",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "QYnVLMxy.thx4YFezR9rbPxc",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "demo-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<PlayRequest>\n    <Play>\n        <LineItems>\n            <LineItem>\n                <PlayElement>\n                    <CustomerProduct actionCode=\"PLAY\">\n                        <Ids>\n                            <accountId schemeAgencyName=\"ACME\">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>\n                        </Ids>\n                        <name>AN</name>\n                    </CustomerProduct>\n                    <Specifications>\n                        <Specification>\n                            <msisdn>0829991234</msisdn>\n                        </Specification>\n                    </Specifications>\n                </PlayElement>\n            </LineItem>\n        </LineItems>\n    </Play>\n</PlayRequest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.79.78.245:30501/v1/play",
+							"protocol": "http",
+							"host": [
+								"41",
+								"79",
+								"78",
+								"245"
+							],
+							"port": "30501",
+							"path": [
+								"v1",
+								"play"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ViaMedia API",
+			"item": [
+				{
+					"name": "Balance",
+					"item": [
+						{
+							"name": "Get Customer Balance",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}api/v1/balances/msisdn/0829991234",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"v1",
+										"balances",
+										"msisdn",
+										"0829991234"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0826305555",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Customer Balance - example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/balances/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"balances",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "102"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"66-heN6/IptIysW1CXHS6wuzdcNHZw\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Mar 2022 15:58:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"balance\": 10,\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Balance for user 0829991234\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Get Profile (wallet))",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}api/v1/profiles/wallet/msisdn/27829991234",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"v1",
+										"profiles",
+										"wallet",
+										"msisdn",
+										"27829991234"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0826305555",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Profile (wallet)) - example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/profiles/wallet/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"profiles",
+												"wallet",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "697"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2b9-5TNlYOmfhvDIAIoYc+XRViDDHlE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Mar 2022 15:56:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"wallet\": [\n        {\n            \"description\": \"You've won a 50MB Data bundle.\",\n            \"awardedAt\": \"2022-03-05T15:40:58.739Z\"\n        },\n        {\n            \"description\": \"You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50\",\n            \"awardedAt\": \"2022-03-05T15:47:02.044Z\"\n        },\n        {\n            \"description\": \"You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50\",\n            \"awardedAt\": \"2022-03-05T15:47:54.362Z\"\n        },\n        {\n            \"description\": \"You've won a R500 Salon Voucher\",\n            \"awardedAt\": \"2022-03-05T15:48:30.496Z\"\n        },\n        {\n            \"description\": \"You've won a R500 Salon Voucher\",\n            \"awardedAt\": \"2022-03-05T15:52:13.852Z\"\n        },\n        {\n            \"description\": \"You've won a R500 Salon Voucher\",\n            \"awardedAt\": \"2022-03-05T15:52:48.694Z\"\n        }\n    ],\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Balance for user 0829991234\"\n    }\n}"
+								},
+								{
+									"name": "When Only Single Wallet is return without an Array wrapper",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/profiles/wallet/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"profiles",
+												"wallet",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "205"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"cd-nU2oRbwqbhxuwoPCgbL8RuHvx88\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Mar 2022 11:07:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"wallet\": [\n        {\n            \"description\": \"You've won a subscription to GamesForce Premium\",\n            \"timestamp\": \"2022-03-06T10:47:45.596Z\"\n        }\n    ],\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Balance for user 0829991234\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Profile (wallet)) + Rewards Mix",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}api/v1/profiles/walletref/msisdn/0829991234",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"v1",
+										"profiles",
+										"walletref",
+										"msisdn",
+										"0829991234"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0826305555",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Profile (wallet)) + Rewards Mix",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/profiles/walletref/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"profiles",
+												"walletref",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "797"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"31d-XfLk8Al9xyZIdXvyYGv8+yzl5x4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Mar 2022 10:18:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wallet\": [\n        {\n            \"ref\": \"50mg-data-bundle-discount\",\n            \"description\": \"You've won a 50MB Data bundle.\",\n            \"awardedAt\": \"2022-03-06T09:04:24.691Z\"\n        },\n        {\n            \"ref\": \"30mg-data-bundle-discount\",\n            \"description\": \"You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50\",\n            \"awardedAt\": \"2022-03-06T09:08:18.146Z\"\n        },\n        {\n            \"ref\": \"gamesforce-voucher\",\n            \"description\": \"You've won a subscription to GamesForce Premium\",\n            \"awardedAt\": \"2022-03-06T09:08:30.719Z\"\n        },\n        {\n            \"ref\": \"1gb-data-bundle-discount\",\n            \"description\": \"You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00\",\n            \"awardedAt\": \"2022-03-06T09:09:22.692Z\"\n        },\n        {\n            \"ref\": \"30mg-data-bundle-discount\",\n            \"description\": \"You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50\",\n            \"awardedAt\": \"2022-03-06T09:15:23.807Z\"\n        }\n    ],\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"profile for user 0829991234\"\n    }\n}"
+								},
+								{
+									"name": "Get Profile (wallet)) + Rewards Mix - ONE WALLER OBJECT",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/profiles/walletref/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"profiles",
+												"walletref",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "210"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d2-XxDec/jL3cAMqparZnZK3SpEB68\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Mar 2022 11:24:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wallet\": [\n        {\n            \"ref\": \"gamesforce-voucher\",\n            \"description\": \"You've won a subscription to GamesForce Premium\",\n            \"awardedAt\": \"2022-03-06T10:47:45.596Z\"\n        }\n    ],\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"profile for user 0829991234\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Rewards",
+					"item": [
+						{
+							"name": "Get Rewards",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "QYnVLMxy.thx4YFezR9rbPxc",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "demo-user",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}api/v1/rewards/msisdn/27829991234",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"v1",
+										"rewards",
+										"msisdn",
+										"27829991234"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0826305555",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Rewards - Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}api/v1/rewards/msisdn/27829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"rewards",
+												"msisdn",
+												"27829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "798"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"31e-redH6Ppxa0iSc/t0bSRxM9Db5ME\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Mar 2022 13:25:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"rewards\": [\n        {\n            \"ref\": \"1gb-data-bundle-discount\",\n            \"description\": \"You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00\"\n        },\n        {\n            \"ref\": \"50mg-data-bundle-discount\",\n            \"description\": \"You've won 20% off a 50MB Data bundle. Was R8.00 now only R6.40\"\n        },\n        {\n            \"ref\": \"50mg-data-bundle-discount\",\n            \"description\": \"You've won a 50MB Data bundle.\"\n        },\n        {\n            \"ref\": \"30mg-data-bundle-discount\",\n            \"description\": \"You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50\"\n        },\n        {\n            \"ref\": \"500-salon-voucher\",\n            \"description\": \"You've won a R500 Salon Voucher\"\n        },\n        {\n            \"ref\": \"gamesforce-voucher\",\n            \"description\": \"You've won 7 Days free access to GamesForce Premium\"\n        },\n        {\n            \"ref\": \"gamesforce-voucher\",\n            \"description\": \"You've won a subscription to GamesForce Premium\"\n        }\n    ],\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Rewards for user 0829991234\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Game",
+					"item": [
+						{
+							"name": "Request To Play The Game",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}api/v1/games/msisdn/0829991234",
+									"host": [
+										"{{url}}api"
+									],
+									"path": [
+										"v1",
+										"games",
+										"msisdn",
+										"0829991234"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "0826305555",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Request To Play The Game - false",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}api/v1/games/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"games",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "157"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"9d-lbiDrPgWaEPCErXNwlmo2Eqw1E0\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Mar 2022 14:32:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"balance\": 5,\n    \"won\": false,\n    \"description\": \"Sorry better luck next time\",\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Balance for user 0829991234\"\n    }\n}"
+								},
+								{
+									"name": "Request To Play The Game - true",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}api/v1/games/msisdn/0829991234",
+											"host": [
+												"{{url}}api"
+											],
+											"path": [
+												"v1",
+												"games",
+												"msisdn",
+												"0829991234"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "0826305555",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Embedder-Policy",
+											"value": "require-corp"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "170"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"aa-ADCVvXwwZjOkPEQjMgRvvZC5Jp0\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Mar 2022 09:15:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"msisdn\": \"0829991234\",\n    \"balance\": 10,\n    \"won\": true,\n    \"description\": \"You have won a 30mg data bundle discount\",\n    \"response\": {\n        \"status\": 200,\n        \"message\": \"Profile for user 0829991234\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
