@@ -1,0 +1,33 @@
+{
+	"wallet": [
+		{
+			"ref": "50mg-data-bundle-discount",
+			"description": "You've won a 50MB Data bundle.",
+			"awardedAt": "2022-03-06T09:04:24.691Z"
+		},
+		{
+			"ref": "30mg-data-bundle-discount",
+			"description": "You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50",
+			"awardedAt": "2022-03-06T09:08:18.146Z"
+		},
+		{
+			"ref": "gamesforce-voucher",
+			"description": "You've won a subscription to GamesForce Premium",
+			"awardedAt": "2022-03-06T09:08:30.719Z"
+		},
+		{
+			"ref": "1gb-data-bundle-discount",
+			"description": "You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00",
+			"awardedAt": "2022-03-06T09:09:22.692Z"
+		},
+		{
+			"ref": "30mg-data-bundle-discount",
+			"description": "You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50",
+			"awardedAt": "2022-03-06T09:15:23.807Z"
+		}
+	],
+	"response": {
+		"status": 200,
+		"message": "profile for user 081112222"
+	}
+} 

@@ -1,0 +1,14 @@
+{
+	"wallet": [
+		{
+			"ref": "1gb-data-bundle-discount",
+			"description": "You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00",
+			"awardedAt": "2022-03-06T09:09:22.692Z"
+		}
+	],
+	"response": {
+		"status": 200,
+		"message": "profile for user 081112222"
+	}
+} 
+​
