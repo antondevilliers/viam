@@ -1,0 +1,976 @@
+[nodemon] starting `node cloud-server.js`
+APP running on port 7000...
+{ BalanceRespone: { Balance: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    BalanceRespone: {
+      Balance: {
+        LineItems: {
+          LineItem: {
+            BalanceElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              BalanceSpecifications: {
+                Specification: { balance: { _text: '10' }, result: { _text: '0' } }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/balances/msisdn/0829991234 200 7215.494 ms - 102
+06/Mar/2022:19:37:43 +0000
+{ PlayRespone: { Play: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    PlayRespone: {
+      Play: {
+        LineItems: {
+          LineItem: {
+            PlayElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              Specifications: {
+                Specification: {
+                  result: { _text: '42' },
+                  rewardRef: { _text: 'gamesforce-voucher' },
+                  rewardMessage: {
+                    _text: 'gamesforce-voucher added to customer wallet'
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Unable to connect to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Unable to connect to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR psql: FATAL: sorry, too many clients already
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+{ BalanceRespone: { Balance: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    BalanceRespone: {
+      Balance: {
+        LineItems: {
+          LineItem: {
+            BalanceElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              BalanceSpecifications: {
+                Specification: { balance: { _text: '9' }, result: { _text: '0' } }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/games/msisdn/0829991234 200 24520.771 ms - 162
+06/Mar/2022:19:38:11 +0000
+
+TARGETERROR Timeout connecting to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+{ WalletRespone: { Wallet: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    WalletRespone: {
+      Wallet: {
+        LineItems: {
+          LineItem: {
+            WalletElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              WalletSpecifications: {
+                Items: {
+                  msisdn: { _text: '0829991234' },
+                  result: { _text: '0' },
+                  reward: {
+                    description: {
+                      _text: "You've won 7 Days free access to GamesForce Premium"
+                    },
+                    timestamp: { _text: '2022-03-06T19:37:53.719Z' }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR psql: FATAL: sorry, too many clients already
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+{ RewardRespone: { Reward: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    RewardRespone: {
+      Reward: {
+        LineItems: {
+          LineItem: {
+            RewardElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              RewardSpecifications: {
+                Items: {
+                  result: { _text: '0' },
+                  reward: [
+                    {
+                      reference: { _text: '1gb-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 20% off a 50MB Data bundle. Was R8.00 now only R6.40"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: { _text: "You've won a 50MB Data bundle." }
+                    },
+                    {
+                      reference: { _text: '30mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50"
+                      }
+                    },
+                    {
+                      reference: { _text: '500-salon-voucher' },
+                      description: { _text: "You've won a R500 Salon Voucher" }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won 7 Days free access to GamesForce Premium"
+                      }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won a subscription to GamesForce Premium"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/profiles/walletref/msisdn/0829991234 200 2900.701 ms - 214
+06/Mar/2022:19:41:51 +0000
+
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    WalletRespone: {
+      Wallet: {
+        LineItems: {
+          LineItem: {
+            WalletElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              WalletSpecifications: {
+                Items: {
+                  msisdn: { _text: '0829991234' },
+                  result: { _text: '0' },
+                  reward: {
+                    description: {
+                      _text: "You've won 7 Days free access to GamesForce Premium"
+                    },
+                    timestamp: { _text: '2022-03-06T19:37:53.719Z' }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/profiles/wallet/msisdn/0829991234 200 74.868 ms - 209
+06/Mar/2022:19:42:21 +0000
+
+GET /api/v1/games/msisdn/0829991234 200 9395.638 ms - 157
+06/Mar/2022:19:43:50 +0000
+TARGETERROR Unable to connect to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>psql: FATAL: sorry, too many clients already</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "psql: FATAL: sorry, too many clients already"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+{ PlayRespone: { Play: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    PlayRespone: {
+      Play: {
+        LineItems: {
+          LineItem: {
+            PlayElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              Specifications: { Specification: { result: { _text: '99' } } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR psql: FATAL: sorry, too many clients already
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+{ BalanceRespone: { Balance: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    BalanceRespone: {
+      Balance: {
+        LineItems: {
+          LineItem: {
+            BalanceElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              BalanceSpecifications: {
+                Specification: { balance: { _text: '7' }, result: { _text: '0' } }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/games/msisdn/0829991234 200 23030.003 ms - 157
+06/Mar/2022:19:44:33 +0000
+
+GET /api/v1/games/msisdn/0829991234 200 23030.003 ms - 157
+06/Mar/2022:19:44:33 +0000
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Timeout connecting to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Timeout connecting to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR Timeout connecting to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR psql: FATAL: sorry, too many clients already
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Unable to connect to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Unable to connect to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR Timeout connecting to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>psql: FATAL: sorry, too many clients already</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "psql: FATAL: sorry, too many clients already"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR Unable to connect to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR Timeout connecting to target system
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Timeout connecting to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Timeout connecting to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Timeout connecting to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Timeout connecting to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+{ WalletRespone: { Wallet: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    WalletRespone: {
+      Wallet: {
+        LineItems: {
+          LineItem: {
+            WalletElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              WalletSpecifications: {
+                Items: {
+                  msisdn: { _text: '0829991234' },
+                  result: { _text: '0' },
+                  reward: {
+                    description: {
+                      _text: "You've won 7 Days free access to GamesForce Premium"
+                    },
+                    timestamp: { _text: '2022-03-06T19:37:53.719Z' }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Unable to connect to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Unable to connect to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR <?xml version="1.0" encoding="ISO-8859-1"?>
+<ErrorResponse>
+  <Error>
+    <LineItems>
+      <LineItem>
+        <ErrorElement>
+          <CustomerProduct>
+            <Ids>
+              <accountId schemeAgencyName="Vodafone">ef055288-e803-4b19-870f-7407a5b69ec7</accountId>
+            </Ids>
+            <name>Demo Account</name>
+          </CustomerProduct>
+           <Error>
+              <message>Timeout connecting to target system</message>
+              <code>999</code>
+          </Error>
+        </ErrorElement>
+      </LineItem>
+    </LineItems>
+  </Error>
+</ErrorResponse> 
+TARGETERRORSTATUS 500
+IsXML true
+errorResponse OBJ :: {
+  "ErrorResponse": {
+    "Error": {
+      "LineItems": {
+        "LineItem": {
+          "ErrorElement": {
+            "CustomerProduct": {
+              "Ids": {
+                "accountId": {
+                  "_text": "ef055288-e803-4b19-870f-7407a5b69ec7"
+                }
+              },
+              "name": {
+                "_text": "Demo Account"
+              }
+            },
+            "Error": {
+              "message": {
+                "_text": "Timeout connecting to target system"
+              },
+              "code": {
+                "_text": "999"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+TARGETERROR psql: FATAL: sorry, too many clients already
+TARGETERRORSTATUS 500
+IsXML false
+errorResponse TXT :: undefined
+{ RewardRespone: { Reward: { LineItems: [Object] } } }
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    RewardRespone: {
+      Reward: {
+        LineItems: {
+          LineItem: {
+            RewardElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              RewardSpecifications: {
+                Items: {
+                  result: { _text: '0' },
+                  reward: [
+                    {
+                      reference: { _text: '1gb-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 20% off a 50MB Data bundle. Was R8.00 now only R6.40"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: { _text: "You've won a 50MB Data bundle." }
+                    },
+                    {
+                      reference: { _text: '30mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50"
+                      }
+                    },
+                    {
+                      reference: { _text: '500-salon-voucher' },
+                      description: { _text: "You've won a R500 Salon Voucher" }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won 7 Days free access to GamesForce Premium"
+                      }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won a subscription to GamesForce Premium"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/profiles/walletref/msisdn/0829991234 200 50536.264 ms - 214
+06/Mar/2022:19:45:55 +0000
+
+FINAL DATA {
+  statusCode: 200,
+  data: {
+    RewardRespone: {
+      Reward: {
+        LineItems: {
+          LineItem: {
+            RewardElement: {
+              CustomerProduct: {
+                Ids: {
+                  accountId: { _text: 'ef055288-e803-4b19-870f-7407a5b69ec7' }
+                },
+                name: { _text: 'Demo Account' }
+              },
+              RewardSpecifications: {
+                Items: {
+                  result: { _text: '0' },
+                  reward: [
+                    {
+                      reference: { _text: '1gb-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 30% off a 1GB Data bundle. Was R60.00 now only R42.00"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 20% off a 50MB Data bundle. Was R8.00 now only R6.40"
+                      }
+                    },
+                    {
+                      reference: { _text: '50mg-data-bundle-discount' },
+                      description: { _text: "You've won a 50MB Data bundle." }
+                    },
+                    {
+                      reference: { _text: '30mg-data-bundle-discount' },
+                      description: {
+                        _text: "You've won 10% off a 30MB Data bundle. Was R5.00 now only R4.50"
+                      }
+                    },
+                    {
+                      reference: { _text: '500-salon-voucher' },
+                      description: { _text: "You've won a R500 Salon Voucher" }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won 7 Days free access to GamesForce Premium"
+                      }
+                    },
+                    {
+                      reference: { _text: 'gamesforce-voucher' },
+                      description: {
+                        _text: "You've won a subscription to GamesForce Premium"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+GET /api/v1/rewards/msisdn/27829991234 200 17580.880 ms - 798
+06/Mar/2022:19:46:58 +0000

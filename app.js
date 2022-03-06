@@ -6,7 +6,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 
 const AppError = require('./utils/AppError');
-const globalErrorHandler = require('./controllers/errorController');
+//const globalErrorHandler = require('./controllers/errorController');
 
 // Routes
 const balanceRoutes = require('./routes/balanceRoutes');
@@ -94,7 +94,7 @@ app.all('*', (req, res, next) => {
  * Global Error Middleware handler
  * Instead of using Try, Catch, pass returned Promise > Next() error Middleware.
  */
-app.use(globalErrorHandler);
+//app.use(globalErrorHandler);
 
 // GLOBAL MIDDLEWARE:
 //-----------------------------------end---

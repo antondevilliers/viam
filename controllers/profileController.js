@@ -19,6 +19,7 @@ exports.getWallets = catchAsync(async (req, res, next) => {
   const data = await fetchXMLData("wallet", msisdn);
 
   // reconstruct of the wallet for the reponse && counter for when not an array is returned. - not mentioned in document example.
+  // For my own sanity, I did not condense the following code, because I need to full object map for any debugging. Any other time, I would condensie it.
   const walletData =
     data && data.data && data.data.WalletRespone && data.data.WalletRespone.Wallet.LineItems.LineItem.WalletElement.WalletSpecifications.Items.reward && Array.isArray(data.data.WalletRespone.Wallet.LineItems.LineItem.WalletElement.WalletSpecifications.Items.reward)
       ? data.data.WalletRespone.Wallet.LineItems.LineItem.WalletElement.WalletSpecifications.Items.reward.map(
