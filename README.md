@@ -14,7 +14,7 @@ port:       ```7000```
 
 ### Notes
 
-***Out if time for:***
+***Out of time for:***
 - Some more refined refactoring.
 - Unit Tests. But, everything was tested multiples times to guarantee a working product. As off 19h00, 6th of March 2022 everything was functional. That include all routes and all expected responses in the correct schema format.
 - High Level Technical Drafts.
@@ -46,7 +46,7 @@ GET: api/v1/balances/msisdn/:msisdn
 GET: api/v1/balances/msisdn/0829991234
 ```
 
-To return any errors that are encountered. Basicly to test the ACME API.
+To return any errors that are encountered. Basically to test the ACME API.
 
 ```
 GET: api/v1/balances/msisdn/:msisdn/apierror/:apierr
@@ -55,7 +55,7 @@ GET: api/v1/balances/msisdn/27829991234/apierror/true
 
 **Extra:**
 
-- Would have ("time") integrated a server reporting tool per API route, to capture all server errors, because of the amount of errors returned, it would be beter to seperate the errors into their own log files.
+- Would have ("time") integrated a server reporting tool per API route, to capture all server errors, because of the amount of errors returned, it would be better to separate the errors into their own log files.
 
 **For example:**
 
