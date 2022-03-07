@@ -84,7 +84,7 @@ GET: api/v1/balances/msisdn/27829991234/apierror/true
 - API ROUTE : ```api/v1/profiles/wallet/msisdn/:msisdn```
 
 **Get Rewards**
-- API ROUTE : ```api/v1/profiles/walletref/msisdn/:msisdn```
+- API ROUTE : ```api/v1/rewards/msisdn/:msisdn```
 
 **THIS: Get Profile (wallet) + Rewards Mix (REF)**
 - API ROUTE : ```api/v1/profiles/walletref/msisdn/:msisdn```
